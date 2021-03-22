@@ -43,7 +43,7 @@ div{
 }
 img{
     width: 100%;    /*sets image to resize according to page size*/
-    height: 50%;
+    height: auto;
 }
 .home_img1{
     text-align: center;
@@ -75,6 +75,43 @@ img{
         height: 80px;
         width: 250px;
     }
+}
+.contemporary{
+    display: flex;
+    padding-left: 50px;
+    padding-right:80px ;
+    text-align: left;
+    font-size: 20px; 
+    margin: auto;
+}
+h3{
+    padding-right: 100px;
+    
+}
+.contemporary ul li{
+    font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .contemporary{
+        flex-direction: column;
+        margin: auto;
+    }
+    .contemporary h3{ margin-bottom: 2px;}
+    
+}
+@media screen and (max-width: 500px) {
+    .contemporary{
+        flex-direction: column;
+        margin: auto;
+        font-size: 15px;
+    }
+    .contemporary ul li{ 
+        padding:0px; 
+        font-size: 15px; 
+        margin-bottom: 2px;
+    }
+    .contemporary h3{ margin-bottom: 2px;}
+    
 }
 .footer{
     background-color:  rgb(46, 27, 20);
