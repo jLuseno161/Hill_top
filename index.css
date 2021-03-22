@@ -1,0 +1,87 @@
+* body{
+    text-align: center;
+    max-width: 100%;        /*view whole page on any screen size*/
+    overflow-x: hidden;     /*prevents horizontall scroll of page*/
+    margin-left: 100px;
+    margin-right: 100px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    list-style:none;
+    float: right;
+    font-size: 12pt;  
+}
+#navlist li{
+    display:inline;
+    padding:10px;
+}
+#navlist li a{
+    text-decoration: none;
+    color: rgb(27, 11, 5);
+}
+#navlist li a:hover{
+    text-decoration: none;
+    color: rgb(134, 131, 130);
+}
+@media screen and (max-width: 1500px) {
+    body{
+        margin: auto;
+    }
+}
+div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#b1, #b2{
+    background-color: rgb(46, 27, 20);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+img{
+    width: 100%;    /*sets image to resize according to page size*/
+    height: 50%;
+}
+.home_img1{
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    padding: 0px;
+}
+/*place centerof another div*/
+#welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15pt;
+    white-space: nowrap;        /*prevents text from wrapping or breaking*/
+}
+@media screen and (max-width: 1200px) {
+    #welcome p{
+        font-size: 13pt;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #welcome h3{
+        font-size: 30pt;
+    }
+    #b2{
+        font-size: large;
+        height: 80px;
+        width: 250px;
+    }
+}
+.footer{
+    background-color:  rgb(46, 27, 20);
+    padding: 30px;
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
