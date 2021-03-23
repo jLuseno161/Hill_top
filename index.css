@@ -1,23 +1,29 @@
 * body{
     text-align: center;
     width: 1500px;
-    max-width: 100%;
+    max-width: 100%; /*resize page on any screen size*/
     height: auto;
     overflow-x: hidden;     /*prevents horizontall scroll of page*/
     margin:0 auto;
 }
 main{
     width: 100%;
-    background-color: cyan;
+    display: flex;
+    flex-direction: column;
 }
 /* Fixed nav bar */
-nav{
-    position: fixed;
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
+    padding-left: 80px;
+    box-sizing: border-box;
 }
 nav ul{
     list-style:none;
