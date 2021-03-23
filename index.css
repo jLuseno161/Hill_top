@@ -9,6 +9,15 @@ main{
     display: flex;
     flex-direction: column;
 }
+/* Fixed nav bar */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #ffffff;
+}
 nav ul{
     list-style:none;
     float: right;
