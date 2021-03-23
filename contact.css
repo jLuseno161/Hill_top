@@ -15,15 +15,17 @@
     max-width: 100%;
     justify-content: center;
     margin: auto;
-    padding: 50px;
+    padding: 60px;
 }
 .form_cont {
     text-align: left;
-    background-color: gold;
     width: 100%;
-    height: auto;
-    padding: 20px;
-   
+    flex: 1;
+}
+.message{
+    flex: 1;
+    text-align: left;
+    width: 100%;
 }
 label {
     display: block;
@@ -35,14 +37,28 @@ label {
     display: inline-block;   /*place fields side by side*/
     width: 49.5%;
 }
+#f1, #f2 {
+    height: 50px;
+}
 textarea,#f1,#f2, #f3 {
     width: 100%;
     background-color: rgb(245, 242, 242);
     box-sizing: border-box;
     border: none;
 }
-#f1, #f2 {
-    height: 50px;
+.reachUs h1{
+    color: rgb(126, 0, 130);
+    font-size: 30px;
+}
+@media screen and (max-width: 1000px){
+    .reachUs{
+        flex-direction: column;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .message{
+        margin-bottom: 50px;
+    }
 }
 #submit {
     margin-top: 10px;
