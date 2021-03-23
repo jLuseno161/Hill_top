@@ -1,16 +1,13 @@
 * body {
     text-align: center;
     width: 1500px;
-    max-width: 100%;
-    /*resize page on any screen size*/
+    max-width: 100%;    /*resize page on any screen size*/
     height: auto;
-    overflow-x: hidden;
-    /*prevents horizontall scroll of page*/
+    overflow-x: hidden; /*prevents horizontall scroll of page*/
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-
 /* Fixed nav bar */
 .nav {
     display: flex;
@@ -25,54 +22,43 @@
     padding-left: 80px;
     box-sizing: border-box;
 }
-
 nav ul {
     list-style: none;
     float: right;
     font-size: 12pt;
 }
-
 #navlist li {
     display: inline;
     padding: 10px;
 }
-
 #navlist li a {
     text-decoration: none;
     color: rgb(27, 11, 5);
 }
-
 #navlist li a:hover {
     text-decoration: none;
     color: rgb(134, 131, 130);
 }
-
 @media screen and (max-width: 1500px) {
     body {
         margin: auto;
     }
 }
-
 section {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-#b1,
-#b2,
-#submit {
+#b1, #b2, #submit {
     background-color: rgb(46, 27, 20);
     color: white;
     padding: 20px;
     border-radius: 5px;
 }
-
 img {
     width: 100%;
     /*sets image to resize according to page size*/
     height: auto;
 }
-
 .welcome,
 .contactImg {
     text-align: center;
@@ -81,7 +67,6 @@ img {
     margin-top: 20px;
     padding: 0px;
 }
-
 /*place centerof another div*/
 #welcome_text,
 #contact_text {
@@ -93,13 +78,11 @@ img {
     white-space: nowrap;
     /*prevents text from wrapping or breaking*/
 }
-
 @media screen and (max-width: 1200px) {
     #welcome_text p {
         font-size: 10pt;
     }
 }
-
 @media screen and (min-width: 1200px) {
     #welcome_text h3 {
         font-size: 30pt;
@@ -111,7 +94,6 @@ img {
         width: 250px;
     }
 }
-
 .contemporary {
     display: flex;
     padding-left: 50px;
@@ -119,16 +101,13 @@ img {
     font-size: 20px;
     margin: auto;
 }
-
 #cont_head {
     padding-right: 100px;
 
 }
-
 .contemporary ul li {
     font-size: 20px;
 }
-
 @media screen and (max-width: 1000px) {
     .contemporary {
         flex-direction: column;
@@ -139,7 +118,6 @@ img {
         margin-bottom: 2px;
     }
 }
-
 @media screen and (max-width: 500px) {
     .contemporary {
         flex-direction: column;
@@ -157,7 +135,6 @@ img {
     }
 
 }
-
 .review {
     display: flex;
     flex-direction: row;
@@ -169,7 +146,6 @@ img {
     box-sizing: border-box;
     box-shadow: 0px 0px 10px gray;
 }
-
 .rev {
     display: flex;
     flex-direction: column;
@@ -182,7 +158,6 @@ img {
     background-color: rgb(238, 234, 233);
 
 }
-
 .rev img {
     /* width: 100%;
     height: 100%;
@@ -194,7 +169,6 @@ img {
     height: 100%;
     border: 4px solid rgb(189, 133, 133);
 }
-
 .face {
     /* display: inline-block;
     margin-left: 55px;
@@ -208,14 +182,12 @@ img {
     width: 100px;
     height: 100px;
 }
-
 @media screen and (max-width: 1200px) {
     .review {
         margin: 10px;
         margin-bottom: 40px;
     }
 }
-
 @media screen and (max-width: 750px) {
     .review {
         display: flex;
@@ -228,23 +200,6 @@ img {
         height: 60px;
     }
 }
-
-/*CONTACT PAGE STYLING*/
-.contact-header {
-    width: 100%;
-}
-
-#contact_text {
-    font-size: 60px;
-}
-
-@media screen and (max-width: 1000px) {
-    #contact_text {
-        font-size: 40px;
-    }
-}
-
-
 .footer {
     background-color: rgb(46, 27, 20);
     box-sizing: border-box;
@@ -256,55 +211,7 @@ img {
     width: 100%;
 
 }
-
 footer a {
     color: white;
     text-decoration: none;
-}
-
-.findUs {}
-
-.form_cont {
-    text-align: left;
-    padding: 20px;
-}
-
-label {
-    display: block;
-    text-align: left;
-    font-weight: 600;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#f1 {
-    width: 200px;
-}
-
-#f1,
-#f2 {
-    height: 40px;
-    background-color: rgb(245, 242, 242);
-    box-sizing: border-box;
-    border: none;
-}
-
-.row_fields {
-    display: inline-block;
-    /*place fields side by side*/
-}
-
-textarea,
-#f2,
-#f3 {
-    width: 400px;
-    background-color: rgb(245, 242, 242);
-    box-sizing: border-box;
-    border: none;
-}
-
-#submit {
-    padding: 20px;
-    width: 400px;
-    text-align: center;
-    border-radius: 0px;
 }
