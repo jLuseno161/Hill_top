@@ -1,13 +1,14 @@
 * body{
     text-align: center;
-    max-width: 100%;        /*view whole page on any screen size*/
+    width: 1500px;
+    max-width: 100%;
+    height: auto;
     overflow-x: hidden;     /*prevents horizontall scroll of page*/
-    margin-left: 100px;
-    margin-right: 100px;
+    margin:0 auto;
 }
 main{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    background-color: cyan;
 }
 /* Fixed nav bar */
 nav{
@@ -50,7 +51,7 @@ div{
     padding: 20px;
     border-radius: 5px;
 }
-.home_img1 > img,.home_img2 > img{
+img {
     width: 100%;    /*sets image to resize according to page size*/
     height: auto;
 }
@@ -183,10 +184,21 @@ div{
         height: 60px;
     }
 }
+
+.contact-header{
+    width: 100%;
+
+}
 .footer{
     background-color:  rgb(46, 27, 20);
-    padding: 30px;
+    box-sizing: border-box;
     color: white;
+    align-items: center;
+    padding: 30px; 
+    overflow: hidden;
+    height: 150px;
+    width:100%;
+   
 }
 footer a{
     color: white;
