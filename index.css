@@ -1,15 +1,18 @@
-* body{
+* body {
     text-align: center;
     width: 1500px;
-    max-width: 100%; /*resize page on any screen size*/
+    max-width: 100%;
+    /*resize page on any screen size*/
     height: auto;
-    overflow-x: hidden;     /*prevents horizontall scroll of page*/
-    margin:0 auto;
+    overflow-x: hidden;
+    /*prevents horizontall scroll of page*/
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
+
 /* Fixed nav bar */
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,132 +25,165 @@
     padding-left: 80px;
     box-sizing: border-box;
 }
-nav ul{
-    list-style:none;
+
+nav ul {
+    list-style: none;
     float: right;
-    font-size: 12pt;  
+    font-size: 12pt;
 }
-#navlist li{
-    display:inline;
-    padding:10px;
+
+#navlist li {
+    display: inline;
+    padding: 10px;
 }
-#navlist li a{
+
+#navlist li a {
     text-decoration: none;
     color: rgb(27, 11, 5);
 }
-#navlist li a:hover{
+
+#navlist li a:hover {
     text-decoration: none;
     color: rgb(134, 131, 130);
 }
+
 @media screen and (max-width: 1500px) {
-    body{
+    body {
         margin: auto;
     }
 }
-section{
+
+section {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#b1, #b2{
+
+#b1,
+#b2,
+#submit {
     background-color: rgb(46, 27, 20);
     color: white;
     padding: 20px;
     border-radius: 5px;
 }
+
 img {
-    width: 100%;    /*sets image to resize according to page size*/
+    width: 100%;
+    /*sets image to resize according to page size*/
     height: auto;
 }
-.welcome,.contact{
+
+.welcome,
+.contactImg {
     text-align: center;
     position: relative;
     color: white;
     margin-top: 20px;
     padding: 0px;
 }
+
 /*place centerof another div*/
-#welcome_text, #contact_text{
+#welcome_text,
+#contact_text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 15pt;
-    white-space: nowrap;        /*prevents text from wrapping or breaking*/
+    white-space: nowrap;
+    /*prevents text from wrapping or breaking*/
 }
+
 @media screen and (max-width: 1200px) {
-    #welcome_text p{
+    #welcome_text p {
         font-size: 10pt;
     }
 }
+
 @media screen and (min-width: 1200px) {
-    #welcome_text h3{
+    #welcome_text h3 {
         font-size: 30pt;
     }
-    #b2{
+
+    #b2 {
         font-size: large;
         height: 80px;
         width: 250px;
     }
 }
-.contemporary{
+
+.contemporary {
     display: flex;
     padding-left: 50px;
     text-align: left;
-    font-size: 20px; 
+    font-size: 20px;
     margin: auto;
 }
-#cont_head{
+
+#cont_head {
     padding-right: 100px;
-    
+
 }
-.contemporary ul li{
+
+.contemporary ul li {
     font-size: 20px;
 }
+
 @media screen and (max-width: 1000px) {
-    .contemporary{
+    .contemporary {
         flex-direction: column;
         justify-content: center;
     }
-    .contemporary h3{ margin-bottom: 2px;
+
+    .contemporary h3 {
+        margin-bottom: 2px;
     }
 }
+
 @media screen and (max-width: 500px) {
-    .contemporary{
+    .contemporary {
         flex-direction: column;
         font-size: 15px;
     }
-    .contemporary ul li{ 
-        padding:0px; 
-        font-size: 15px; 
+
+    .contemporary ul li {
+        padding: 0px;
+        font-size: 15px;
         margin-bottom: 2px;
     }
-    .contemporary h3{ 
+
+    .contemporary h3 {
         margin-bottom: 2px;
     }
-    
+
 }
-.review{
+
+.review {
     display: flex;
     flex-direction: row;
     margin: 80px;
     margin-top: 20px;
     margin-bottom: 40px;
-    justify-content: center; /* place images center of div */
+    justify-content: center;
+    /* place images center of div */
     box-sizing: border-box;
     box-shadow: 0px 0px 10px gray;
 }
-.rev{
+
+.rev {
     display: flex;
     flex-direction: column;
     padding-top: 15px;
     border-radius: 6px;
     align-items: center;
-    flex: 2; /* uniformly sized divs */
+    flex: 2;
+    /* uniformly sized divs */
     margin: 10px;
     background-color: rgb(238, 234, 233);
-    
+
 }
-.rev img{
+
+.rev img {
     /* width: 100%;
     height: 100%;
     position: absolute;
@@ -158,7 +194,8 @@ img {
     height: 100%;
     border: 4px solid rgb(189, 133, 133);
 }
-.face{
+
+.face {
     /* display: inline-block;
     margin-left: 55px;
     height: 50px;
@@ -171,47 +208,103 @@ img {
     width: 100px;
     height: 100px;
 }
+
 @media screen and (max-width: 1200px) {
-    .review{
+    .review {
         margin: 10px;
         margin-bottom: 40px;
     }
 }
+
 @media screen and (max-width: 750px) {
-    .review{
+    .review {
         display: flex;
         flex-direction: column;
         margin: 20px;
     }
-    .face{     
+
+    .face {
         width: 60px;
         height: 60px;
     }
 }
+
 /*CONTACT PAGE STYLING*/
-.contact-header{
+.contact-header {
     width: 100%;
 }
-#contact_text{
+
+#contact_text {
     font-size: 60px;
 }
-@media screen and (max-width: 1000px){
-    #contact_text{
+
+@media screen and (max-width: 1000px) {
+    #contact_text {
         font-size: 40px;
     }
 }
-.footer{
-    background-color:  rgb(46, 27, 20);
+
+
+.footer {
+    background-color: rgb(46, 27, 20);
     box-sizing: border-box;
     color: white;
     align-items: center;
-    padding: 30px; 
+    padding: 30px;
     overflow: hidden;
     height: 150px;
-    width:100%;
-   
+    width: 100%;
+
 }
-footer a{
+
+footer a {
     color: white;
     text-decoration: none;
+}
+
+.findUs {}
+
+.form_cont {
+    text-align: left;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#f1 {
+    width: 200px;
+}
+
+#f1,
+#f2 {
+    height: 40px;
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    border: none;
+}
+
+.row_fields {
+    display: inline-block;
+    /*place fields side by side*/
+}
+
+textarea,
+#f2,
+#f3 {
+    width: 400px;
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    border: none;
+}
+
+#submit {
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 0px;
 }

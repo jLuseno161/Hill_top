@@ -21,17 +21,39 @@
                     <li><a href="">DINING</a></li>
                     <li><a href="">GYM & WELLNESS</a></li>
                     <li><a href="">MEETINGS & EVENTS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                     <li><input type="button" id="b1" value="BOOK NOW"></li>
                 </ul>
             </nav>
         </header>
         <!-- Header end-->
 
-        <section class="contact">
+        <section class="contactImg">
             <img src="images/contact1.jpg" alt="">
             <h1 id="contact_text">GET IN TOUCH</h1>
         </section>
+        <section class="findUs">
+            <div class="form_cont">
+                <form action="" name="contact_us">
+                    <div class="row_fields">
+                        <label id="f5" for="f1">First Name:</label>
+                        <input type="text" id="f1">
+                    </div>
+                    <div class="row_fields">
+                        <label id="f5" for="f1">Last Name:</label>
+                        <input type="text" id="f1">
+                    </div>
+                    <label for="f2">Phone Number:</label>
+                    <input type="text" id="f2">
+                    <label for="f2">Email *:</label>
+                    <input type="text" id="f2">
+                    <label for="f4">Message:</label>
+                    <textarea name="Message" id="f4" cols="40" rows="5"></textarea><br>
+                    <input type="button" id="submit" value="SEND MESSAGE " onclick="validate()">
+                </form>
+            </div>
+        </section>
+
 
         <footer class="footer">
             <p class="copyright">© Hilltop Restaurants 2021. All Rights Reserved</p>
