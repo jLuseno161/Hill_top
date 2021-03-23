@@ -37,7 +37,7 @@ label {
     display: inline-block;   /*place fields side by side*/
     width: 49.5%;
 }
-#f1, #f2 {
+#f1, #f2, #f3 {
     height: 50px;
 }
 textarea,#f1,#f2, #f3 {
