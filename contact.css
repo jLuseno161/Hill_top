@@ -90,7 +90,6 @@ h3.gallery {margin-top:50px;
     display:flex;
     color:steelblue;
     background:linear-gradient(to left,gray,steelblue,white,plum,turquoise);
-    color:p;
     font-style: italic;
     color:rgb(46, 27, 20);
     margin-left: 15em;
@@ -101,5 +100,9 @@ h3.gallery {margin-top:50px;
     flex:1;
     margin: auto 0.9em;
     border: solid 1px rgb(124, 86, 64);
-
+  }
+.photos{
+    display: flex;
+    justify-content: space-between;
+    font-size: 11pt;
   }
