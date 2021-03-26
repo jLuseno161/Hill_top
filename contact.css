@@ -78,3 +78,28 @@ textarea,#f1,#f2, #f3 {
     height: 300px;
     
 }
+
+/*****************************GALLERY CSS**********************************/
+.ph_gallery h1{
+    color: purple;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+h3.gallery {margin-top:50px;
+    display:flex;
+    color:steelblue;
+    background:linear-gradient(to left,gray,steelblue,white,plum,turquoise);
+    color:p;
+    font-style: italic;
+    color:rgb(46, 27, 20);
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+  h3.gallery:before, h3.gallery:after {
+    content:'';
+    flex:1;
+    margin: auto 0.9em;
+    border: solid 1px rgb(124, 86, 64);
+
+  }
