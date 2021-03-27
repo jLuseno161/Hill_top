@@ -104,5 +104,35 @@ h3.gallery {margin-top:50px;
 .photos{
     display: flex;
     justify-content: space-between;
-    font-size: 11pt;
+    font-size: 12pt;
   }
+#ph_head{
+    background-color: rgb(221, 179, 221);
+    padding: 20px;
+    flex: 1;
+    margin: 2px;
+  }
+.photos_div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+#ph_photo{
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid;
+}
+#photo{
+    float: left;
+    margin: 20px;
+    flex:1;
+
+}
+#ph_text{
+    text-align: initial;
+    font-size: 11pt;
+    flex:1;
+
+}
