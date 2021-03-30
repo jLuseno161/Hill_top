@@ -114,25 +114,39 @@ h3.gallery {margin-top:50px;
   }
 .photos_div{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-
+    overflow-x: auto;
+    max-width: 100%;
 }
 #ph_photo{
+    flex: 0 0 auto;
+    background-color: whitesmoke;
+    width: 80%;
     display: flex;
-    flex: 1;
+    flex-direction: row;
     padding: 10px;
-    border: 1px solid;
 }
 #photo{
     float: left;
     margin: 20px;
-    flex:1;
-
+    flex: 1;
 }
 #ph_text{
     text-align: initial;
-    font-size: 11pt;
-    flex:1;
-
+    font-size: 12pt;
+    box-sizing: border-box;
+    padding: 20px;
+    flex: 1;
+}
+#photo img{
+    width: 100%;
+}
+@media screen and (max-width: 1200px){
+    #ph_photo{
+        flex: 0 0 auto;
+        padding: 10px;
+        background-color: whitesmoke;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
 }
