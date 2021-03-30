@@ -114,7 +114,7 @@ h3.gallery {margin-top:50px;
   }
 .photos_div{
     display: flex;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
     max-width: 100%;
 }
 #ph_photo{
